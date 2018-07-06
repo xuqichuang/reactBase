@@ -12,6 +12,7 @@ import PublicAlert from '@/components/alert/alert';
 import TouchableOpacity from '@/components/TouchableOpacity/TouchableOpacity';
 import mixin, { padStr } from '@/utils/mixin';
 import './home.less';
+import PublicFooter from '@/components/footer/footer';
 
 @mixin({padStr})
 class Home extends Component {
@@ -167,6 +168,7 @@ class Home extends Component {
         </div>
         <TouchableOpacity className="submit-btn" clickCallBack={this.sumitForm} text="提交" />
         <PublicAlert closeAlert={this.closeAlert} alertTip={this.state.alertTip} alertStatus={this.state.alertStatus} />
+        <PublicFooter />
       </main>
     );
   }

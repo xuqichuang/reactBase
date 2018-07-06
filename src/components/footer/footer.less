@@ -1,0 +1,17 @@
+@import (reference) "../../style/mixin.less";
+@import "../../assets/iconfont/iconfont.css";
+
+.footer-container{
+    background-color: @base-color;
+    .flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    .wh(100%, 88px);
+    .font(30px,#fff,center);
+    .footer-list{
+        .wh(25%,100%);
+        margin-top:10px;
+    }
+}
